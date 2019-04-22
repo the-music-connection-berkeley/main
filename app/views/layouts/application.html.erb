@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TMC</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='bg'>
+<a href='/'>
+  <div class="container logo">
+      <%= image_tag "logo.svg", :class => 'logo', :width=> "10%", :height => "5%" %>
+  </div>
+</a>
+<div class="container">
+    <%= yield %>
+</div>
+</body>
+</html>
